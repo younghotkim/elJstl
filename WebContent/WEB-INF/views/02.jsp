@@ -32,7 +32,7 @@
 		\${5 le 2} ---> ${5 le 2}<br>
 		
 		\${5 != 2} ---> ${5 != 2}<br>
-		\${5 ne 2} ---> ${5 ne 2}<br>
+		<!-- \${5 ne 2} ${5 ne 2}<br> 자꾸 오류나서 주석처리-->
 		
 		<br><br><br>
 		
@@ -55,6 +55,12 @@
 		
 		<br><br><br><br><br><br><br><br><br><br><br>
 		
+		<%String val = (String)request.getAttribute("reqVal");%>
+		<br>
+		<%=val%>
+		<br>
+		${reqVal}
+		<br>
 	</p>
 
 
